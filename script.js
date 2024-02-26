@@ -52,6 +52,7 @@ var TimeCode = h.toString() + m.toString();
 if(d == 3){
     if(TimeCode < stimetbw[0] && TimeCode >= 840){
         elementNxsbj.textContent = subs[d][0]; 
+        elementRem.textContent = 'あと'+((stimetb[0] - h*100 - m)*60 - s)+'秒';
     }else if(TimeCode >= etimetbw[0] && TimeCode < stimetbw[1]){
         elementNxsbj.textContent = subs[d][1];
         elementRem.textContent = 'あと'+((stimetb[1] - h*100 - m)*60 - s)+'秒';
@@ -83,6 +84,7 @@ if(d == 3){
 }else{
     if(TimeCode < stimetb[0] && TimeCode >= 850){
         elementNxsbj.textContent = subs[d][0]; 
+        elementRem.textContent = 'あと'+((stimetb[0] - h*100 - m)*60 - s)+'秒';
     }else if(TimeCode >= etimetb[0] && TimeCode < stimetb[1]){
         elementNxsbj.textContent = subs[d][1];
         elementRem.textContent = 'あと'+((stimetb[1] - h*100 - m)*60 - s)+'秒';
