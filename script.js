@@ -50,7 +50,7 @@ const elementRem = document.querySelector(".rem");
 var TimeCode = h.toString() + m.toString();
 
 if(d == 3){
-    if(TimeCode < stimetbw[0] && TimeCode > 840){
+    if(TimeCode < stimetbw[0] && TimeCode >= 840){
         elementNxsbj.textContent = subs[d][0]; 
     }else if(TimeCode >= etimetbw[0] && TimeCode < stimetbw[1]){
         elementNxsbj.textContent = subs[d][1];
@@ -81,7 +81,7 @@ if(d == 3){
         elementRem.textContent = null ;
     }
 }else{
-    if(TimeCode < stimetb[0] && TimeCode > 850){
+    if(TimeCode < stimetb[0] && TimeCode >= 850){
         elementNxsbj.textContent = subs[d][0]; 
     }else if(TimeCode >= etimetb[0] && TimeCode < stimetb[1]){
         elementNxsbj.textContent = subs[d][1];
