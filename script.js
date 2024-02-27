@@ -61,10 +61,10 @@ if(d == 3){
         elementRem.textContent = 'あと'+((stimetbw[2] - h*100 - m)*60 - s)+'秒';
     }else if(TimeCode >= etimetbw[2] && TimeCode < stimetbw[3]){
         elementNxsbj.textContent = subs[d][3];
-        elementRem.textContent = 'あと'+((stimetbw[3] - h*100 - m + 40)*60 - s)+'秒';
+        elementRem.textContent = 'あと'+((stimetbw[3] - h*100 - m)*60 - s)+'秒';
     }else if(TimeCode >= etimetbw[3] && TimeCode < stimetbw[4]){
         elementNxsbj.textContent = subs[d][4];
-        elementRem.textContent = 'あと'+((stimetbw[4] - h*100 - m + 40)*60 - s )+'秒';
+        elementRem.textContent = 'あと'+((stimetbw[4] - h*100 - m)*60 - s )+'秒';
     }else if(TimeCode >= etimetbw[4] && TimeCode < stimetbw[5]){
         elementNxsbj.textContent = subs[d][5];
         elementRem.textContent = 'あと'+((stimetbw[5] - h*100 - m)*60 - s)+'秒';
@@ -96,7 +96,7 @@ if(d == 3){
         elementRem.textContent = 'あと'+((stimetb[3] - h*100 - m)*60 - s)+'秒';
     }else if(TimeCode >= etimetb[3] && TimeCode < stimetb[4]){
         elementNxsbj.textContent = subs[d][4];
-        elementRem.textContent = 'あと'+((stimetb[4] - h*100 - m)*60 - s)+'秒';
+        elementRem.textContent = 'あと'+((stimetb[4] - h*100 - m + 40)*60 - s)+'秒';
     }else if(TimeCode >= etimetb[4] && TimeCode < stimetb[5]){
         elementNxsbj.textContent = subs[d][5];
         elementRem.textContent = 'あと'+((stimetb[5] - h*100 - m + 40)*60 - s)+'秒';
