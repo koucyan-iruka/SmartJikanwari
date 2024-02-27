@@ -64,7 +64,7 @@ if(d == 3){
         elementRem.textContent = 'あと'+((stimetbw[3] - h*100 - m + 40)*60 - s)+'秒';
     }else if(TimeCode >= etimetbw[3] && TimeCode < stimetbw[4]){
         elementNxsbj.textContent = subs[d][4];
-        elementRem.textContent = 'あと'+((stimetbw[4] - h*100 - 40 - m)*60 - s )+'秒';
+        elementRem.textContent = 'あと'+((stimetbw[4] - h*100 - m + 40)*60 - s )+'秒';
     }else if(TimeCode >= etimetbw[4] && TimeCode < stimetbw[5]){
         elementNxsbj.textContent = subs[d][5];
         elementRem.textContent = 'あと'+((stimetbw[5] - h*100 - m)*60 - s)+'秒';
