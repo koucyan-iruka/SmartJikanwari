@@ -48,7 +48,7 @@ const elementNxsbj = document.querySelector(".nextsbj");
 const elementRem = document.querySelector(".rem");
 
 var TimeCode = h.toString() + m.toString();
-
+if(d >= 1 && d <= 5){
 if(d == 3){
     if(TimeCode < stimetbw[0] && TimeCode >= 840){
         elementNxsbj.textContent = subs[d][0]; 
@@ -110,5 +110,6 @@ if(d == 3){
         elementNxsbj.textContent = '時間外'
         elementRem.textContent = null ;
     }
+}
 }
 },1000);
